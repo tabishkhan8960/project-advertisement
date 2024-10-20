@@ -1,7 +1,7 @@
 import './App.css';
-import Aboute from './components/Aboute';
+// import Aboute from './components/Aboute';
 import Navbar from './components/Navbar';
-// import TextForm from './components/TextForm';
+import TextForm from './components/TextForm';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
 
 <Navbar title="Color print Advertising" aboutetext=""/>
 <div className="container my-8">
-{/* <TextForm heading="Enter the text to analyze below"/> */}
-<Aboute></Aboute>
+<TextForm heading="Enter the text to analyze below"/>
+{/* <Aboute></Aboute> */}
 
 </div>
 

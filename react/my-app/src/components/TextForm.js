@@ -23,6 +23,8 @@ export default function TextForm(props) {
         setText(event.target.value);
         
     };
+ 
+   
 const [text, setText] = useState('Enter the text');
 return (
     <>
@@ -34,7 +36,8 @@ return (
 </div>
 <button className="btn btn-secondary mx-2" onClick={handelupclick}>convert to upper case</button>
 <button className="btn btn-secondary mx-2" onClick={handeldownclick}>convert to lower case</button>
-<button className="btn btn-secondary" onClick={handelclearclick}>Clear</button>
+<button className="btn btn-secondary mx-2" onClick={handelclearclick}>Clear</button>
+
     </div>
     <div className="container my-3">
         <h1>summery</h1>
