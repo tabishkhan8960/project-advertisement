@@ -1,26 +1,31 @@
 import React,{useState} from 'react'
 
+
 export default function TextForm(props) {
     const handelupclick=()=>{
         console.log("button click");
         let newtext=text.toUpperCase();
         setText(newtext);
+        props.showalert("toUpperCase   ","success  ")
     };
     const handeldownclick=()=>{
         console.log("button click");
         let newtext=text.toLowerCase();
         setText(newtext);
+        props.showalert("toLowerCase   ","success  ")
         
     };   
     const handelclearclick=()=>{
         console.log("button click");
         let newtext=("");
         setText(newtext);
+        props.showalert("clear   ","success  ")
         
     };
     const handleOnChange=(event)=>{
         console.log("handonchage");
         setText(event.target.value);
+        
         
     };
  
@@ -41,8 +46,8 @@ return (
     </div>
     <div className="container my-3">
         <h1>summery</h1>
-        <p>Words={text.split(" ").length} Chracters={text.length}</p>
-        <p>{0.008*60*text.split(" ").length} seconds to read</p>
+        <p>Words={text.split(" ").length-1} Chracters={text.length}</p>
+        <p>{0.008*60*text.split(" ").length-.48} seconds to read</p>
         <h2>preview</h2>
         <p>{text}</p>
     </div>
